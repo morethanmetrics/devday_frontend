@@ -20,14 +20,10 @@
         <td><%= tag_association.created_at %></td>
         <td><%= tag_association.tagable_id %></td>
         <td><%= tag_association.tag_id %></td>
-        <td><%= link_to 'Show', tag_association %></td>
-        <td><%= link_to 'Edit', edit_tag_association_path(tag_association) %></td>
-        <td><%= link_to 'Destroy', tag_association, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Tag Association', new_tag_association_path %>
+use project/:project_id/tag_associations to create tag_associations
