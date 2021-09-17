@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
 * Ruby version
-
+2.5.1
 * System dependencies
-
+rvm (or other ruby version manager) is advised
 * Configuration
-
+bundle install
 * Database creation
-
-* Database initialization
-
+rails db:setup
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
+rails test
 * Deployment instructions
 
-* ...
+* Development
+    rails s
+    go to http://localhost:3000
