@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_17_140408) do
+ActiveRecord::Schema.define(version: 2021_09_17_155756) do
 
   create_table "projects", force: :cascade do |t|
     t.string "title", limit: 255
     t.text "description", limit: 4294967295
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string "color", limit: 255
   end
 
   create_table "tag_associations", force: :cascade do |t|
