@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @project.id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @project.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @project.description %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @project.created_at %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @project.updated_at %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
+--
+<%= link_to 'Show', project_show_path(@project) %>
+<%= link_to 'Edit', project_edit_path(@project) %>
+<%= link_to 'Update', project_update_path(@project), method: :put %>
+<%= link_to 'Destroy', project_destroy_path(@project), method: :delete, data: { confirm: 'Are you sure?' } %>
+<hr>
+<%= link_to 'Index', project_index_path() %>
+<%= link_to 'New', project_new_path() %>
+<%= link_to 'Create', project_create_path() %>
+
+
