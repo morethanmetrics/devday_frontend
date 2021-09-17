@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @tag.id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tag.name %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @tag.created_at %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @tag.updated_at %>
+</p>
+
+<%= link_to 'Edit', edit_tag_path(@tag) %> |
+<%= link_to 'Back', tags_path %>
+--
+<%= link_to 'Show', tag_show_path(@tag) %>
+<%= link_to 'Edit', tag_edit_path(@tag) %>
+<%= link_to 'Update', tag_update_path(@tag), method: :put %>
+<%= link_to 'Destroy', tag_destroy_path(@tag), method: :delete, data: { confirm: 'Are you sure?' } %>
+<hr>
+<%= link_to 'Index', tag_index_path() %>
+<%= link_to 'New', tag_new_path() %>
+<%= link_to 'Create', tag_create_path() %>
+
+

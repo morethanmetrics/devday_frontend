@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :tag_associations, :only => [:index, :show, :new, :edit, :create, :update, :destroy] do
+  end
+  resources :tag_associations, :only => [:index] do
+  end
+  resources :tags, :only => [:index, :show, :new, :edit, :create, :update, :destroy] do
+  end
   resources :projects, :only => [:index, :show, :new, :edit, :create, :update, :destroy] do
   end
   resource :home, :only => [:show], :controller => :home do
