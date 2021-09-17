@@ -5,6 +5,6 @@ class TagAssociation < ApplicationRecord
   belongs_to :tag
 
   validates :tag, uniqueness: { scope: :tagable }
-  #validates :tagable_type, inclusion: { in: TAGABLE_ENTITIES }
+  validates :tagable_type, inclusion: { in: TAGABLE_ENTITIES }
   
 end

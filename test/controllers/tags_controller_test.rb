@@ -23,7 +23,9 @@ class TagsControllerTest < ActionDispatch::IntegrationTest
            ),
            :params => {
              :format => :json,
-             :name => "t2"
+             :tag => {
+               :name => "t2"
+             }
            }
       assert_response(:success)
       response_body = JSON.parse(response.body)

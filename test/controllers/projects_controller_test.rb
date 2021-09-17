@@ -23,7 +23,9 @@ class ProjectsControllerTest < ActionDispatch::IntegrationTest
            ),
            :params => {
              :format => :json,
-             :title => "p2"
+             :project => {
+               :title => "p2"
+             }
            }
       assert_response(:success)
       response_body = JSON.parse(response.body)
