@@ -1,3 +1,9 @@
+PATH
+  remote: ../../github.com/jorbie/rails_generator_playground
+  specs:
+    rails_generator_playground (0.1.0)
+      rails (>= 5.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -210,6 +216,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.1)
+  rails_generator_playground!
   sass-rails (>= 6)
   selenium-webdriver
   spring
